@@ -1,11 +1,19 @@
 body {
     margin: 0;
-    /* background: #222; */
+    background: #383838;
     font-family: Google Sans;
     font-weight: 300;
+    color: white;
 }
 .pt1 {
     text-align: center;
+    -webkit-text-fill-color: #ffffff;
+    color: #ffffff;
+}
+
+.pt1 a {
+    text-decoration-color: white;
+    color: white;
 }
 
 .container {
@@ -15,8 +23,16 @@ body {
     margin-right: 10px; */
 }
 
+.container p {
+    float: left;
+    padding-top: 1px;
+    padding-left: 15px;
+    color: white;
+    font-size: 20;
+}
+
 header {
-    background: #555;
+    background: #2E2E2E;
     position: fixed;
     width: 100%;
 }
@@ -51,12 +67,12 @@ nav li {
 }
 
 nav a {
-    color: white;
+    color: #666666;
     text-decoration: none;
 }
 
 nav a:hover {
-    color: #adadad;
+    color: #999999;
 }
 
 ::-webkit-scrollbar {
@@ -68,9 +84,14 @@ nav a:hover {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: black;
+    background: rgb(0, 195, 255);
 }
 
 ::-webkit-scrollbar-thumb:hover {
     background: #464646;
+}
+
+.ab1 {
+    /* text-align: center; */
+    margin-left: 2%;
 }
