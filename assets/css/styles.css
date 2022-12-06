@@ -5,6 +5,7 @@ body {
     font-weight: 300;
     color: white;
 }
+
 .pt1 {
     text-align: center;
     -webkit-text-fill-color: #ffffff;
@@ -17,10 +18,8 @@ body {
 }
 
 .container {
-    width: 97%;
-    margin: auto;
-    /* margin-left: 10px;
-    margin-right: 10px; */
+    width: auto;
+    margin-left: 8px;
 }
 
 .container p {
@@ -58,6 +57,7 @@ nav {
 nav ul {
     margin: 0;
     padding: 0;
+    padding-right: 30px;
     list-style: none;
 }
 
@@ -96,4 +96,32 @@ nav a:hover {
 .ab1 {
     /* text-align: center; */
     margin-left: 2%;
+}
+
+.footer {
+    text-align: left;
+    padding-left: 20px;
+    opacity: 0.35;
+}
+
+@media only screen and (max-width: 620px) {
+    nav li {
+        padding-top: 20px;
+    }
+
+    .logo {
+        width: 40px;
+    }
+
+    .container {
+        width: 94%;
+    }
+
+    .container p {
+        font-size: 15;
+    }
+
+    .pixart, .dc {
+        width: 100%;
+    }
 }
