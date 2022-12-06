@@ -4,10 +4,15 @@ body {
     font-family: Google Sans;
     font-weight: 300;
 }
+.pt1 {
+    text-align: center;
+}
 
 .container {
-    width: 80%;
-    margin: 0 auto;
+    width: 97%;
+    margin: auto;
+    /* margin-left: 10px;
+    margin-right: 10px; */
 }
 
 header {
@@ -52,4 +57,20 @@ nav a {
 
 nav a:hover {
     color: #adadad;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: white;
+}
+
+::-webkit-scrollbar-thumb {
+    background: black;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #464646;
 }
