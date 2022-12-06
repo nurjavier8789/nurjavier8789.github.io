@@ -114,11 +114,12 @@ nav a:hover {
     }
 
     .container {
-        width: 94%;
+        width: 100%;
     }
 
     .container p {
-        font-size: 15;
+        font-size: 14;
+        padding-top: 6px;
     }
 
     .pixart, .dc {
