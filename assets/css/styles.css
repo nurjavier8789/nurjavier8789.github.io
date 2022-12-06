@@ -25,10 +25,11 @@ body {
 
 .container p {
     float: left;
-    padding-top: 1px;
+    padding-top: 5px;
     padding-left: 15px;
     color: white;
-    font-size: 20;
+    font-size: 18;
+    font-weight: bold;
 }
 
 header {
@@ -69,6 +70,7 @@ nav li {
 nav a {
     color: #666666;
     text-decoration: none;
+    font-weight: bold;
 }
 
 nav a:hover {
@@ -88,7 +90,7 @@ nav a:hover {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #464646;
+    background: rgb(0, 160, 210);
 }
 
 .ab1 {
