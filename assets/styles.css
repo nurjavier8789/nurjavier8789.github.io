@@ -6,6 +6,15 @@ body {
     height: 100%;
 }
 
+#date {
+    background-color: #383838;
+    font-size: 14;
+    font-weight: bold;
+    width: 275;
+    padding: 1;
+    margin: auto;
+}
+
 .pt1, .pt2, .pt3 {
     text-align: center;
     -webkit-text-fill-color: #ffffff;
@@ -255,7 +264,6 @@ nav a:hover {
     }
 
     .logo {
-        /* width: 38px; */
         padding-top: 18px;
     }
 
