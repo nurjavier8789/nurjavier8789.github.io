@@ -6,6 +6,21 @@ body {
     height: 100%;
 }
 
+.soon {
+    width: 100%;
+    height: fit-content;
+    background: rgb(0, 195, 255);
+    position: fixed;
+    top: 95%;
+    z-index: 1;
+    text-align: center;
+    padding: 16px;
+}
+
+.blank {
+    height: 46px;
+}
+
 #date {
     background-color: #383838;
     font-size: 14;
