@@ -206,6 +206,7 @@ body {
 .fade:hover {
     opacity: 70%;
 }
+
 /* 
 .fade1 {
     float: left;
@@ -354,24 +355,56 @@ body {
 
 
 /* Other Device */
-@media only screen and (max-width: 820px) {
-    .pt2 {
-        padding-top: 460px;
-        padding-bottom: 216px;
+.pc {
+    display: none;
+}
+
+@media only screen and (max-width: 950px) {
+    .pc {
+        display: block;
+        padding-top: 50%;
+        text-align: center;
+        font-weight: bold;
+        font-size: 24;
+        opacity: 0.5;
     }
 
-    .pt3 {
-        padding-top: 60px;
-        padding-bottom: 59px;
+    .pc3 a {
+        text-decoration: none;
+        color: rgb(0, 195, 255);
+    }
+
+    .bgscrol {
+        display: none;
+    }
+
+    .bgarrow {
+        display: none;
+    }
+
+    .old_ver {
+        display: none;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .bg {
+        display: none;
+    }
+
+    .pttxt {
+        display: none;
+    }
+
+    .proj {
+        display: none;
+    }
+
+    .footin {
+        display: none;
     }
 }
 
-@media only screen and (max-width: 320px) and (max-height: 630px) {
-    .pt1 {
-        padding-top: 40%;
-    }
-
-    .pt2 {
-        padding-top: 100%;
-    }
-}
+/* @media only screen and (max-width: 320px) and (max-height: 630px) {} */
