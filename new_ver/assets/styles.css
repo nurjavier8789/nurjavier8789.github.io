@@ -129,7 +129,6 @@ body {
 /* Text */
 .pttxt {
     width: 100%;
-    /* height: 432px; */
     height: 47%;
     margin: 0px;
 
@@ -140,6 +139,12 @@ body {
     text-align: center;
     color: #000000;
     background-color: #FFFFFF;
+}
+
+.overlaypttxt {
+    display: inline;
+    width: 100px;
+    height: 100px;
 }
 
 .pttxt p {
