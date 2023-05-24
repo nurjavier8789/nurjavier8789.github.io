@@ -10,6 +10,27 @@ body {
     height: 100%;
 }
 
+/* time and date */
+#time {
+    text-align: center;
+    width: 275px;
+    font-weight: bold;
+    font-size: 14px;
+    background-color: #383838;
+    z-index: 10;
+
+    position: fixed;
+    top: 97%;
+    left: 1%;
+}
+
+#timepc {
+    text-align: center;
+    width: 275px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
 /* navbar */
 .navbar {
     position: fixed;
@@ -70,6 +91,9 @@ body {
     color: #999999;
     text-decoration: underline;
 }
+
+
+/* -= Home =- */
 
 /* Hero 1 */
 .bg {
@@ -360,7 +384,7 @@ body {
 
 
 /* Other Device */
-.pc {
+.pc, #timepc, #datepc {
     display: none;
 }
 
@@ -374,42 +398,88 @@ body {
         opacity: 0.5;
     }
 
+    #datepc {
+        font-family: "Montserrat";
+        display: block;
+        font-size: 22;
+    }
+
+    #timepc {
+        display: block;
+        font-size: 24;
+    }
+
     .pc3 a {
         text-decoration: none;
         color: rgb(0, 195, 255);
     }
 
-    .bgscrol {
-        display: none;
-    }
-
-    .bgarrow {
-        display: none;
-    }
-
-    .old_ver {
-        display: none;
-    }
-
-    .navbar {
-        display: none;
-    }
-
-    .bg {
-        display: none;
-    }
-
-    .pttxt {
-        display: none;
-    }
-
-    .proj {
-        display: none;
-    }
-
-    .footin {
+    #time, .bgcrol, .bgarrow, .old_ver, .navbar, .bg, .pttxt, .proj, .footin, .hello, .poto, .textab, .heroab {
         display: none;
     }
 }
 
 /* @media only screen and (max-width: 320px) and (max-height: 630px) {} */
+
+/* -= About =- */
+
+.about {
+    background: #000;
+}
+
+.heroab {
+    width: 100%;
+    height: 100%;
+    z-index: -5;
+}
+
+.poto {
+    position: relative;
+    width: 744px;
+    height: 744px;
+    top: 138px;
+    left: 84;
+    background-repeat: no-repeat;
+    /* display: inline; */
+
+    padding-right: 297px;
+
+    background-image: url("pictures/photoab.png");
+}
+
+.potofade p {
+    float: right;
+}
+
+.potofade {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+}
+
+/* Hello there! */
+.hello {
+    position: absolute;
+    left: 60%;
+    top: 38%;
+    /* top: 311px;
+    left: 1041px; */
+
+    font-family: 'Google Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 122px;
+}
+
+/* Details Text */
+.textab {
+    text-align: left;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    margin-left: 9%;
+
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 51px;
+}

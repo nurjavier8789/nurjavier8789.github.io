@@ -11,13 +11,17 @@ function Dates() {
     // var dates = date.getDate();
     // var month = date.getMonth();
     // var year = date.getFullYear();
-    
+
+    var clock = hour + ":" + min + ":" + sec;
 
     const month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
     const day = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
-    document.getElementById("date").innerText = day[date.getDay()] + ", " + date.getDate() + " " + month[date.getMonth()] + " " + date.getFullYear() + ", " + hour + ":" + min + ":" + sec;
-    // document.getElementById("date").innerText = date.getFullYear();
+    document.getElementById("datepc").innerText = day[date.getDay()] + ", " + date.getDate() + " " + month[date.getMonth()] + " " + date.getFullYear();
+    document.getElementById("timepc").innerText = clock;
+
+    // still waiting for position :V
+    // document.getElementById("time").innerText = day[date.getDay()] + ", " + date.getDate() + " " + month[date.getMonth()] + " " + date.getFullYear() + ", " + hour + ":" + min + ":" + sec;
 
     setTimeout(Dates, 1000);
 }
