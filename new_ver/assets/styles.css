@@ -112,9 +112,11 @@ body {
 }
 
 .bgatas {
-    padding-top: 9.64%;
-    padding-left: 30.21%;
-    padding-right: 30.21%;
+    /* padding-top: 8%; */
+    /* margin-bottom: 26%; */
+    padding-top: 140px;
+    margin-bottom: 500px;
+    width: 820px;
 
     font-weight: 700;
     font-size: 64px;
@@ -124,10 +126,10 @@ body {
 
 .bgscrol {
     text-decoration: none;
-    position: absolute;
-    left: 47.29%;
-    right: 47.29%;
+    /* position: absolute; */
+    /* width: 104px; */
     bottom: 8%;
+    margin-bottom: 10%;
 
     font-weight: 700;
     font-size: 20px;
@@ -137,10 +139,9 @@ body {
 }
 
 .bgarrow {
-    position: absolute;
-    bottom: 3%;
-    left: 49.69%;
-    right: 49.69%;
+    /* position: absolute; */
+    /* bottom: 3%; */
+    width: 12px;
     text-decoration: none;
 
     font-weight: 700;
@@ -153,14 +154,13 @@ body {
 /* Text */
 .pttxt {
     width: 100%;
-    height: 47%;
-    margin: 0px;
+    padding-top: 5%;
+    padding-bottom: 5%;
 
     font-weight: 400;
     font-size: 64px;
     line-height: 81.41px;
 
-    text-align: center;
     color: #000000;
     background-color: #FFFFFF;
 }
@@ -172,17 +172,14 @@ body {
 }
 
 .pttxt p {
-    padding-top: 94px;
-    padding-bottom: 94px;
-    padding-left: 500px;
-    padding-right: 500px;
     margin: 0px;
 }
 
 /* My Project */
 .proj {
     width: 100%;
-    height: 1048px;
+    height: fit-content;
+    padding-bottom: 6%;
 
     background: #E6E6E6;
 }
@@ -206,15 +203,13 @@ body {
 }
 
 .proj1 {
-    margin-right: -4px;
+    margin-left: -4;
     height: 600px;
     width: 600px;
     display: inline-block;
 }
 
 .dc {
-    position: absolute;
-    left: 58;
     width: 600px;
     height: 600px;
     z-index: 1;
@@ -247,12 +242,14 @@ body {
 } */
 
 .web {
-    margin-right: -4px;
+    margin-left: -4;
     height: 600px;
     width: 600px;
 }
 
 .proj3 {
+    margin-top: -5;
+    margin-left: -4;
     display: inline-block;
     height: 600px;
     width: 600px;
@@ -301,7 +298,7 @@ body {
     float: left;
 }
 
-.footin {
+.footin, .footab {
     width: 100%;
     height: 110px;
     text-align: center;
@@ -346,14 +343,14 @@ body {
 
 /* back to old ver */
 .old_ver {
+    display: inline-block;
     position: fixed;
-    width: fit-content;
-    padding-left: 32px;
-    padding-right: 32px;
-    height: fit-content;
-    margin-left: 760px;
+    padding-left: 26px;
+    padding-right: 26px;
+    margin-left: 28%;
+    /* margin-right: 25%; */
+    
     z-index: 3;
-    text-align: center;
 
     background: rgb(0, 195, 255);
 }
@@ -384,7 +381,7 @@ body {
 
 
 /* Other Device */
-.pc, #timepc, #datepc {
+.pc, #timepc, #datepc, .pcud {
     display: none;
 }
 
@@ -419,7 +416,7 @@ body {
         font-size: 24;
     }
 
-    .cs, #time, .bgcrol, .bgarrow, .old_ver, .navbar, .bg, .pttxt, .proj, .footin, .hello, .poto, .textab, .heroab {
+    .clock, .cs, #time, .bgcrol, .bgarrow, .old_ver, .navbar, .bg, .pttxt, .proj, .footin, .hello, .poto, .textab, .heroab {
         display: none;
     }
 }
@@ -435,7 +432,6 @@ body {
 .heroab {
     width: 100%;
     height: 100%;
-    z-index: -5;
 }
 
 .poto {
@@ -445,7 +441,7 @@ body {
     top: 138px;
     left: 84;
     background-repeat: no-repeat;
-    /* display: inline; */
+    z-index: -2;
 
     padding-right: 297px;
 
@@ -462,7 +458,7 @@ body {
     background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
 }
 
-/* Hello there! */
+/* Hello there! + Arrow */
 .hello {
     position: absolute;
     left: 60%;
@@ -477,6 +473,18 @@ body {
     line-height: 122px;
 }
 
+.bgarrowab {
+    position: absolute;
+    text-decoration: none;
+    top: 92%;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+
+    color: #FFFFFF;
+}
+
 /* Details Text */
 .textab {
     text-align: left;
@@ -488,3 +496,41 @@ body {
     font-size: 40px;
     line-height: 51px;
 }
+
+@media screen and (max-width: 1400px) {
+    .pcud {
+        display: block;
+        padding-top: 25%;
+        padding-bottom: 10%;
+        text-align: center;
+        font-weight: bold;
+        font-size: 24;
+        opacity: 0.5;
+    }
+
+    #datepc {
+        font-family: "Montserrat";
+        display: block;
+        font-size: 22;
+    }
+
+    #timepc {
+        display: block;
+        font-size: 24;
+    }
+
+    .pc3 a {
+        text-decoration: none;
+        color: rgb(0, 195, 255);
+    }
+
+    .cspc {
+        font-size: 24;
+    }
+
+    .poto, .textab, .footab, .bgarrowab, .hello, .heroab, .potofade {
+        display: none;
+    }
+}
+
+/* -= Social Page =- */
