@@ -392,6 +392,7 @@ body {
     .pc {
         display: block;
         padding-top: 50%;
+        padding-bottom: 50%;
         text-align: center;
         font-weight: bold;
         font-size: 24;
@@ -414,7 +415,11 @@ body {
         color: rgb(0, 195, 255);
     }
 
-    #time, .bgcrol, .bgarrow, .old_ver, .navbar, .bg, .pttxt, .proj, .footin, .hello, .poto, .textab, .heroab {
+    .cspc {
+        font-size: 24;
+    }
+
+    .cs, #time, .bgcrol, .bgarrow, .old_ver, .navbar, .bg, .pttxt, .proj, .footin, .hello, .poto, .textab, .heroab {
         display: none;
     }
 }
