@@ -1,7 +1,14 @@
+@font-face {
+    font-family: 'Google-sans';
+    src: url(../Google-sans.woff2);
+}
+
+
 body {
+    /* font-family: 'Google Sans'; */
+    /* src: url(./Google-sans.woff2) format('woff2'); */
     margin: 0;
     background: #383838;
-    font-family: Google Sans;
     color: white;
     height: 100%;
 }
@@ -45,7 +52,9 @@ body {
     margin: auto;
 }
 
-.pt1, .pt2, .pt3 {
+.pt1,
+.pt2,
+.pt3 {
     text-align: center;
     -webkit-text-fill-color: #ffffff;
     color: #ffffff;
@@ -196,7 +205,10 @@ nav a:hover {
     margin-top: 20%;
 }
 
-.footersc p, .footerab p, .footerin p, .footermp p {
+.footersc p,
+.footerab p,
+.footerin p,
+.footermp p {
     opacity: 0.32;
 }
 
@@ -334,7 +346,8 @@ nav a:hover {
         padding-top: 16px;
     }
 
-    .pixart, .dc {
+    .pixart,
+    .dc {
         width: 100%;
     }
 }
@@ -351,7 +364,7 @@ nav a:hover {
     }
 }
 
-@media  only screen and (max-width: 320px) and (max-height: 630px) {
+@media only screen and (max-width: 320px) and (max-height: 630px) {
     .pt1 {
         padding-top: 40%;
     }
