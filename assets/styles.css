@@ -1,12 +1,5 @@
-@font-face {
-    font-family: 'Google-sans';
-    src: url(../Google-sans.woff2);
-}
-
-
 body {
-    /* font-family: 'Google Sans'; */
-    /* src: url(./Google-sans.woff2) format('woff2'); */
+    font-family: 'Google Sans';
     margin: 0;
     background: #383838;
     color: white;
