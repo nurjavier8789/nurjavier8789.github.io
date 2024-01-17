@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family:'Google Sans Regular';
+    font-family: 'Google Sans Regular';
     margin: 0;
     background: #383838;
     color: white;
@@ -100,7 +100,6 @@ body {
     color: white;
     font-size: 16;
     font-weight: bold;
-    letter-spacing: -0.3;
 }
 
 header {
@@ -194,7 +193,6 @@ nav a:hover {
     padding-bottom: 1px;
     padding-top: 1px;
     text-align: center;
-    margin-top: 16%;
 }
 
 .footermp {
@@ -202,7 +200,6 @@ nav a:hover {
     padding-bottom: 1px;
     padding-top: 1px;
     text-align: center;
-    margin-top: 20%;
 }
 
 .footersc p,
@@ -273,17 +270,41 @@ nav a:hover {
     border-radius: 20px;
 }
 
+.PGSoc {
+    display: grid;
+}
+
+.PGSoc footer {
+    margin-top: auto;
+}
+
 .soc {
-    padding-top: 18%;
+    padding-top: 160px;
+    padding-bottom: 10%;
     text-align: center;
     font-weight: bold;
     font-size: 24;
-    opacity: 0.5;
+}
+
+.link {
+    width: fit-content;
+    text-align: center;
+    padding-left: 32%;
+    padding-right: 20%;
+}
+
+.soc li {
+    text-align: left;
 }
 
 .soc a {
     text-decoration: none;
     color: rgb(0, 195, 255);
+}
+
+.soc a:hover {
+    text-decoration: underline;
+    color: rgb(0, 217, 255);
 }
 
 .sc {
@@ -311,6 +332,14 @@ nav a:hover {
 .project li {
     padding-top: 3%;
     padding-left: 10%;
+}
+
+.PGProj {
+    display: grid;
+}
+
+.PGProj footer {
+    margin-top: auto;
 }
 
 @media only screen and (max-width: 620px) {
@@ -361,6 +390,11 @@ nav a:hover {
     .pt3 {
         padding-top: 60px;
         padding-bottom: 59px;
+    }
+
+    .link {
+        padding-left: 20%;
+        padding-right: 20%;
     }
 }
 
