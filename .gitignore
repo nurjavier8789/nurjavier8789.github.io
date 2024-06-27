@@ -1,6 +1,3 @@
 .idea/
 .vs/
 .*/
-
-# for discord verification test
-!.well-known/
