@@ -222,61 +222,122 @@ body {
 
 .projbar {
     padding-top: 44px;
+    margin: 0;
 }
 
+/* -= Project =- */
+
 .proj1 {
-    margin-left: -4;
     height: 600px;
     width: 600px;
     display: inline-block;
 }
 
+.proj2 {
+    height: 600px;
+    width: 600px;
+    display: inline-block;
+}
+
+.proj3 {
+    display: inline-block;
+    height: 600px;
+    width: 600px;
+
+    background-color: #000;
+}
+
 .dc {
     width: 600px;
     height: 600px;
-    z-index: 1;
 }
 
-.fade {
+.web {
+    height: 600px;
+    width: 600px;
+}
+
+/* -= Project (child) =- */
+
+.fade1 {
     width: 600px;
     height: 600px;
     background: #000;
+    color: #FFF;
     position: absolute;
-    z-index: 2;
+    z-index: 1;
 
     transition: 0.2s all ease-out;
 
     opacity: 0;
 }
 
-.fade:hover {
-    opacity: 70%;
+.fade1:hover {
+    opacity: 100%;
+    background: rgba(0, 0, 0, 0.500);
 }
 
-/* 
-.fade1 {
+.textAreaFade1 {
     float: left;
+    position: absolute;
+    bottom: 0;
+    text-align: left;
+    padding: 50px;
+    padding-left: 32px;
 }
 
 .fade2 {
-    float: left;
-    
-} */
-
-.web {
-    margin-left: -4;
-    height: 600px;
     width: 600px;
+    height: 600px;
+    background: #000;
+    color: #FFF;
+    position: absolute;
+    z-index: 1;
+
+    transition: 0.2s all ease-out;
+
+    opacity: 0;
 }
 
-.proj3 {
-    margin-top: -5;
-    margin-left: -4;
-    display: inline-block;
-    height: 600px;
-    width: 600px;
+.fade2:hover {
+    opacity: 100%;
+    background: rgba(0, 0, 0, 0.500);
+}
 
-    background-color: #000;
+.textAreaFade2 {
+    float: left;
+    position: absolute;
+    bottom: 0;
+    text-align: left;
+    padding: 50px;
+    padding-left: 32px;
+}
+
+.fade3 {
+    width: 600px;
+    height: 600px;
+    background: #000;
+    color: #FFF;
+    position: absolute;
+    z-index: 1;
+
+    transition: 0.2s all ease-out;
+
+    opacity: 0;
+}
+
+.fade3:hover {
+    opacity: 100%;
+    background: rgba(0, 0, 0, 0.500);
+}
+
+.textAreaFade3 {
+    float: left;
+    position: absolute;
+    bottom: 0;
+    text-align: left;
+    padding: 50px;
+    padding-left: 32px;
 }
 
 .se {
