@@ -414,12 +414,25 @@ nav a:hover {
     }
     
     .logo {
-        width: 34px;
+        width: 30px;
         padding-top: 21px;
     }
 
     .container p {
-        font-size: 13px;
+        font-size: 12px;
         padding-top: 15px;
+    }
+
+    .container nav ul li a {
+        font-size: 13px;
+    }
+
+    .container nav ul li {
+        padding-right: 2px;
+    }
+
+    .container nav ul {
+        padding-right: 46px;
+        padding-top: 14px;
     }
 }
