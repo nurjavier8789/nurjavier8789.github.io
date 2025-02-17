@@ -436,7 +436,14 @@ nav a:hover {
 /* -= Phone Size =- */
 
 @media only screen and (max-width: 510px) {
-    /* Nav Bar */
+    .pt1 {
+        padding-top: 40%;
+    }
+
+    .pt2 {
+        padding-top: 100%;
+    }
+    
     .logo {
         width: 30px;
         padding-top: 21px;
@@ -458,25 +465,5 @@ nav a:hover {
     .container nav ul {
         padding-right: 46px;
         padding-top: 14px;
-    }
-
-    /* Home Page */
-    .pt1 {
-        padding-top: 40%;
-    }
-
-    .pt2 {
-        padding-top: 100%;
-    }
-
-    /* About Page */
-    .mc img {
-        width: 80%;
-        border-radius: 20px;
-    }
-
-    .bio {
-        padding-left: 10%;
-        padding-right: 10%;
     }
 }
