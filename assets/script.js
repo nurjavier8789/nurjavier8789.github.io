@@ -1,3 +1,13 @@
+
+let clickedText;
+let popUpBox;
+
+async function init() {
+    this.clickedText = await document.getElementById("dcUsername");
+    this.popUpBox = await document.getElementById("realDCUsername");
+    clickedText.addEventListener("click", copyDCUsername);
+}
+
 function Dates() {
     var date = new Date();
     var hour = date.getHours();
@@ -6,11 +16,6 @@ function Dates() {
     hour = ("0" + hour).slice(-2);
     min = ("0" + min).slice(-2);
     sec = ("0" + sec).slice(-2);
-
-    // var day = date.getDay();
-    // var dates = date.getDate();
-    // var month = date.getMonth();
-    // var year = date.getFullYear();
     
 
     const month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
@@ -23,3 +28,13 @@ function Dates() {
 }
 
 Dates();
+init();
+
+function copyDCUsername() {
+    navigator.clipboard.writeText('nurjavier8789');
+    this.popUpBox.classList.add("popUUp");
+
+    setTimeout(() => {
+        popUpBox.classList.remove("popUUp");
+    }, 1500);
+}
