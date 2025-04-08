@@ -13,36 +13,6 @@ body {
     height: 100%;
 }
 
-.soon {
-    width: 100%;
-    height: fit-content;
-    background: rgb(0, 195, 255);
-    position: fixed;
-    top: 92.6%;
-    z-index: 1;
-    text-align: center;
-}
-
-.so1 {
-    margin: 0;
-    padding-top: 12px;
-}
-
-.so2 {
-    margin: 0;
-    padding-top: 5px;
-    padding-bottom: 12px;
-}
-
-.so2 a {
-    text-decoration: none;
-    color: rgb(250, 235, 215);
-}
-
-.blank {
-    height: 68px;
-}
-
 #date {
     background-color: #383838;
     font-size: 14;
@@ -52,7 +22,6 @@ body {
     margin: auto;
 }
 
-.pt1,
 .pt2,
 .pt3 {
     text-align: center;
@@ -62,6 +31,16 @@ body {
 
 .pt1 {
     padding-top: 350px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.pt1 h4 {
+    color: rgb(255, 253, 163);
+}
+
+.pt1 h4 a {
+    color: rgb(255, 255, 235);
 }
 
 .pt2 {
@@ -171,7 +150,6 @@ nav a:hover {
     padding-bottom: 1px;
     padding-top: 1px;
     text-align: center;
-    /* opacity: 0.32; */
 }
 
 .footerab {
@@ -180,7 +158,6 @@ nav a:hover {
     padding-top: 1px;
     text-align: center;
     margin-top: 4%;
-    /* opacity: 0.32; */
 }
 
 .footersc {
@@ -373,9 +350,40 @@ nav a:hover {
     opacity: 0;
 }
 
+.GCsoon {
+    width: 100%;
+    height: fit-content;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background: rgb(0, 195, 255);
+    position: fixed;
+    /* top: 92.6%; */
+    bottom: 0;
+    z-index: 1;
+    text-align: center;
+}
+
+.GCso {
+    margin: 0;
+    /* padding-top: 12px; */
+}
+
+.GCso1 {
+    margin: 0;
+    color: rgb(250, 235, 215);
+}
+
+.cs {
+    padding-top: 21%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24;
+    opacity: 0.5;
+}
+
 /* -= Tablet Size =- */
 
-@media only screen and (max-width: 620px) {
+@media only screen and (max-width: 628px) {
     nav li {
         padding-right: 9px;
         padding-top: 12px;
@@ -407,10 +415,43 @@ nav a:hover {
         font-size: 14px;
         padding-top: 16px;
     }
+
+    .container nav ul li a {
+        font-size: 15px;
+    }
+    
+    .container nav ul li {
+        padding-right: 2px;
+    }
     
     .pixart,
     .dc {
         width: 100%;
+    }
+}
+
+@media only screen and (max-width: 582px) {
+    .logo {
+        width: 30px;
+        padding-top: 18px;
+    }
+
+    .container p {
+        font-size: 10px;
+        padding-top: 16px;
+    }
+
+    nav li {
+        padding-right: 9px;
+        padding-top: 6px;
+    }
+
+    .container nav ul li a {
+        font-size: 13px;
+    }
+
+    .container {
+        margin-left: 18px;
     }
 }
 
@@ -446,16 +487,21 @@ nav a:hover {
     
     .logo {
         width: 30px;
-        padding-top: 21px;
+        padding-top: 12px;
+    }
+
+    .container {
+        margin-left: 12px;
     }
 
     .container p {
-        font-size: 12px;
-        padding-top: 15px;
+        /* font-size: 10px; */
+        /* padding-top: 16px; */
+        display: none;
     }
 
     .container nav ul li a {
-        font-size: 13px;
+        font-size: 12px;
     }
 
     .container nav ul li {
@@ -463,7 +509,7 @@ nav a:hover {
     }
 
     .container nav ul {
-        padding-right: 46px;
+        padding-right: 32px;
         padding-top: 14px;
     }
 }
