@@ -175,7 +175,7 @@ nav a:hover {
 .pt2,
 .pt3 {
     text-align: center;
-    -webkit-text-fill-color: #ffffff;
+    /* -webkit-text-fill-color: #ffffff; */
     color: #ffffff;
 }
 
@@ -535,4 +535,8 @@ nav a:hover {
         padding-right: 32px;
         padding-top: 14px;
     }
+}
+
+.OoO {
+    color: rgb(64, 64, 64);
 }
