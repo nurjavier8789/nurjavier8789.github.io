@@ -1,8 +1,7 @@
-
 let clickedText;
 let popUpBox;
 
-async function init() {
+async function copyDiscordUsername() {
     this.clickedText = await document.getElementById("dcUsername");
     this.popUpBox = await document.getElementById("realDCUsername");
     clickedText.addEventListener("click", copyDCUsername);
@@ -27,8 +26,38 @@ function Dates() {
     setTimeout(Dates, 1000);
 }
 
-Dates();
-init();
+function countMyAges() {
+    const idMyAge = document.getElementById("myAge");
+    var date = new Date();
+    var myAgeNow = 0;
+    var myBirthday = 2006;
+    var currentYears = date.getFullYear();
+    var currentMonth = date.getMonth() + 1;
+    var currentDate = date.getDate();
+
+    if (currentMonth === 6 && currentDate === 16) {
+        myAgeNow = currentYears - myBirthday;
+        idMyAge.innerText = "I'm " + myAgeNow + " Years Old!";
+        document.getElementById("myDay").style.display = "block";
+        document.getElementById("myDay").innerText = "[ Today is my birthday!! 🎉 ]";
+    } else if (currentMonth >= 6 && currentDate >= 16) {
+        myAgeNow = currentYears - myBirthday;
+        idMyAge.innerText = "I'm " + myAgeNow + " Years Old!";
+    } else if (currentMonth <= 6 && currentDate <= 16) {
+        myAgeNow = (currentYears - myBirthday) - 1;
+        idMyAge.innerText = "I'm " + myAgeNow + " Years Old!";
+    }
+
+    console.log(document.getElementById("myDay"));
+}
+
+if (document.URL.includes("index.html")) {
+    Dates();
+} else if (document.URL.includes("about.html")) {
+    countMyAges();
+} else if (document.URL.includes("social.html")) {
+    copyDiscordUsername();
+}
 
 function copyDCUsername() {
     navigator.clipboard.writeText('nurjavier8789');
