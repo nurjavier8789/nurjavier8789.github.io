@@ -102,7 +102,8 @@ nav a:hover {
 .footersc p,
 .footerab p,
 .footerin p,
-.footermp p {
+.footermp p,
+.footergs p{
     opacity: 0.32;
 }
 
@@ -398,13 +399,111 @@ nav a:hover {
     opacity: 0;
 }
 
-.cs {
+/* -= GAMING SOCIAL PAGE =- */
+.gaminkHTMLPartPage, .gaminkBodyPartPage {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    scroll-snap-type: y mandatory;
+}
+
+.gaminkBodyPartPage::-webkit-scrollbar {
+    display: none;
+}
+
+.section {
+    scroll-snap-align: start;
+    width: 100%;
+    height: 100vh;
+}
+
+.overlay a {
+    text-decoration: none;
+    color: white;
+}
+
+.overlay {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    background-position: center;
+    align-content: center;
+    text-align: center;
+    z-index: 99;
+}
+
+.welcome {
+    background: url("pictures/milthmBG.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.osu {
+    background-image: url("pictures/osuBG.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.osuContainer {
+    text-align: center;
+}
+
+.osuText1 {
+    font-size: 48px;
+}
+
+.osuText2 {
+    font-size: 20px;
+}
+
+.osuText3 {
+    z-index: 2;
+}
+
+.osuProfileButton {
+    display: inline-block;
+    text-align: center;
+    align-content: center;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 20px;
+    width: fit-content;
+    height: fit-content;
+    background: #ff66aa;
+}
+
+.osuBackgroundButton {
+    background-image: url("pictures/triangleOsu.png");
+    height: fit-content;
+    padding: 18px;
+    background-size: cover;
+    background-position-y: bottom;
+    z-index: 1;
+}
+
+.gamingComingSoon {
+    background: url("pictures/comingSoonBG.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.footergs {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background-color: #2E2E2E;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    text-align: center;
+}
+
+/* .cs {
     padding-top: 21%;
     text-align: center;
     font-weight: bold;
     font-size: 24;
     opacity: 0.5;
-}
+} */
 
 /* -= Tablet Size =- */
 
