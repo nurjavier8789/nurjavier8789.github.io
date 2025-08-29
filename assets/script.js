@@ -1,12 +1,3 @@
-let clickedText;
-let popUpBox;
-
-async function copyDiscordUsername() {
-    this.clickedText = await document.getElementById("dcUsername");
-    this.popUpBox = await document.getElementById("realDCUsername");
-    clickedText.addEventListener("click", copyDCUsername);
-}
-
 function Dates() {
     var date = new Date();
     var hour = date.getHours();
@@ -51,19 +42,19 @@ function countMyAges() {
     console.log(document.getElementById("myDay"));
 }
 
+async function copyDCUsername() {
+    let popUpBox = await document.getElementById("popUp");
+
+    navigator.clipboard.writeText('nurjavier8789');
+    popUpBox.classList.add("clickedText");
+
+    setTimeout(() => {
+        popUpBox.classList.remove("clickedText");
+    }, 3000);
+}
+
 if (document.URL.includes("index.html")) {
     Dates();
 } else if (document.URL.includes("about.html")) {
     countMyAges();
-} else if (document.URL.includes("social.html")) {
-    copyDiscordUsername();
-}
-
-function copyDCUsername() {
-    navigator.clipboard.writeText('nurjavier8789');
-    this.popUpBox.classList.add("popUUp");
-
-    setTimeout(() => {
-        popUpBox.classList.remove("popUUp");
-    }, 1500);
 }
