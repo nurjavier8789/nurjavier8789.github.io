@@ -168,7 +168,7 @@ nav a:hover {
 .pt3 {
     background-color: #383838;
     margin-top: 40px;
-    padding-top: 100px;
+    padding-top: 25px;
     padding-bottom: 89px;
 }
 
@@ -177,6 +177,10 @@ nav a:hover {
     text-align: center;
     /* -webkit-text-fill-color: #ffffff; */
     color: #ffffff;
+}
+
+.discord1, .discord2 {
+    display: inline-block;
 }
 
 .footerin {
@@ -406,6 +410,19 @@ nav a:hover {
 
 /* -= Tablet Size =- */
 
+@media only screen and (max-width: 839px) {
+    .dc,
+    .discord1,
+    .discord2 {
+        width: 96%;
+    }
+
+    .pt2 {
+        padding-top: 370px;
+        padding-bottom: 210px;
+    }
+}
+
 @media only screen and (max-width: 628px) {
     nav li {
         padding-right: 9px;
@@ -448,7 +465,9 @@ nav a:hover {
     }
     
     .pixart,
-    .dc {
+    .dc,
+    .discord1,
+    .discord2 {
         width: 100%;
     }
 }
@@ -482,8 +501,8 @@ nav a:hover {
 
 @media only screen and (max-width: 820px) {
     .pt2 {
-        padding-top: 460px;
-        padding-bottom: 216px;
+        padding-top: 370px;
+        padding-bottom: 210px;
     }
     
     .pt3 {
@@ -535,8 +554,4 @@ nav a:hover {
         padding-right: 32px;
         padding-top: 14px;
     }
-}
-
-.OoO {
-    color: rgb(64, 64, 64);
 }
