@@ -53,7 +53,7 @@ async function copyDCUsername() {
     }, 3000);
 }
 
-if (document.URL.includes("index.html")) {
+if (document.URL.includes("index.html") || (!document.URL.includes("about.html") && !document.URL.includes("myproj.html") && !document.URL.includes("social.html") && !document.URL.includes("index.html"))) {
     Dates();
 } else if (document.URL.includes("about.html")) {
     countMyAges();
