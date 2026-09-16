@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /new_ver/
+Disallow: /googlec928c0e12010d426.html
+Disallow: /ms19507018.txt
+Disallow: /bgp.html
+
+Sitemap: https://nurjavier8789.github.io/sitemap.xml
