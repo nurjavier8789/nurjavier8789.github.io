@@ -181,7 +181,8 @@ nav a:hover {
     background-position: center;
 }
 
-.bgpText2 a {
+.bgpText2 a,
+.genshinText2 a {
     text-decoration: underline;
 }
 
